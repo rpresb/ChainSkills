@@ -1,0 +1,7 @@
+migrate --compile-all --reset
+web3.eth.accounts
+Greetings.deployed().then(function(instance) { app = instance; })
+app.getGreetings()
+app.setGreetings("Hello Rodrigo", {from: web3.eth.accounts[0]})
+app.getGreetings()
+
